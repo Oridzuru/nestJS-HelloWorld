@@ -4,6 +4,7 @@ import { IsNotEmpty } from 'class-validator'
 import { InjectModel } from 'nestjs-typegoose';
 import { Post as PostSchema } from './post.model'
 import { ModelType } from '@hasezoey/typegoose/lib/types';
+
 class CreatePostDto {
     @ApiProperty({ description: '标题', example: 'examoleTitle'})
     @IsNotEmpty({ message: '标题不能为空' })
